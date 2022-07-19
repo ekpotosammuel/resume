@@ -35,7 +35,7 @@
             <a class="navbar-brand" href="/">Home</a>
             <a class="navbar-brand" href="{{ route('project') }}">Project</a>
             <a class="navbar-brand" href="{{ route('profile') }}">Profile</a>
-            <a class="navbar-brand" href="#">Contact</a>
+            <a class="navbar-brand" href="{{ route('contact') }}">Contact</a>
         </div>
         {{--  <section class="d-flex justify-content-center mb-4">
             <div class="bg-secondary text-light text-center p-2">

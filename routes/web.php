@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,8 +17,8 @@ use App\Http\Controllers\ExperienceController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('home.home');
+// Route::get('/contact', function () {
+//     return view('contact.contact');
 // });
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -32,3 +33,7 @@ Route::group(['prefix' => 'profile'], function() {
     Route::put('/{profile}', [ProfileController::class, 'update'])->name('edit');
 
 });
+
+Route::get('contact', [ContactController::class, 'index'])->name('contact');
+Route::post('contact', [ContactController::class, 'store']);
+// Route::get('contact', [ContactController::class, 'index'])->name('contact');

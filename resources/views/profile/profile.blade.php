@@ -26,12 +26,14 @@
         </div>
 
         <div class="card-body ">
-            {{--  <img src="img/profile.jpg" class="rounded float-left" alt="...">  --}}
-            {{--  <img src="img/profile.jpg" class="rounded-circle" alt="Cinque Terre" width="auto" height="auto">  --}}
+
         </div>
         <div>
             <h5 class="card-title">PERSONAL DETAILS</h5>
-            <p class="card-text">Stacks: Python Django | PHP Laravel as a Server-Side Language.</p>
+            <p class="card-text">
+                Server-Side Language: Python Django | PHP Laravel <br>
+                Frontend: HTML | CSS | JS | Bootstrap.
+            </p>
         </div>
             <div class="col-sm-6 py-1">
                 <span class="fw-medium text-primary">First Name:</span> {{$profile->firstName}}

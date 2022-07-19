@@ -141,10 +141,10 @@
                         <div class="service-item">
                             <i class="fab fa-2x fa-android mx-auto mb-4"></i>
                             <h5 class="mb-2">Apps Development</h5>
-                            <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
+                            <p class="mb-0">develop endpoint in mobile app based on design specification</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    {{--  <div class="col-md-6">
                         <div class="service-item">
                             <i class="fa fa-2x fa-search mx-auto mb-4"></i>
                             <h5 class="mb-2">SEO</h5>
@@ -157,7 +157,7 @@
                             <h5 class="mb-2">Content Creating</h5>
                             <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
                         </div>
-                    </div>
+                    </div>  --}}
                 </div>
             </section>
             <!-- Services End -->
