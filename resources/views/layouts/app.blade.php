@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <met#aeb3b8et="utf-8">
-        <title>DarkCV - Samuel Bernard Ekpoto</title>
+        <title>Samuel Bernard Ekpoto</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -31,12 +31,15 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="card-body">
-            <a class="navbar-brand" href="/">Home</a>
-            <a class="navbar-brand" href="{{ route('project') }}">Project</a>
-            <a class="navbar-brand" href="{{ route('profile') }}">Profile</a>
-            <a class="navbar-brand" href="{{ route('contact') }}">Contact</a>
-        </div>
+        <center>
+            <div class="card-body">
+                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="{{ route('project') }}">Project</a>
+                <a class="navbar-brand" href="{{ route('profile') }}">Profile</a>
+                <a class="navbar-brand" href="{{ route('contact') }}">Contact</a>
+            </div>
+        </center>
+
         {{--  <section class="d-flex justify-content-center mb-4">
             <div class="bg-secondary text-light text-center p-2">
                 <div class="d-flex justify-content-center mb-8">
