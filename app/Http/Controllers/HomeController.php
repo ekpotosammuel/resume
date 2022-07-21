@@ -16,7 +16,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $profile = Profile::find(1);
+        $profile = Profile::first();
         // dd($profile);
         return view('home.home', compact('profile'));
     }

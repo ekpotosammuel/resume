@@ -15,7 +15,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        $profile = Profile::find(1);
+        $profile = Profile::first();
         // dd($profile);
         return view('profile.profile', compact('profile'));
     }
