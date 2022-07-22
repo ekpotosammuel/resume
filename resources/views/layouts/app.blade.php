@@ -33,10 +33,27 @@
     <body>
         <center>
             <div class="card-body">
-                <a class="navbar-brand" href="/">Home</a>
-                <a class="navbar-brand" href="{{ route('project') }}">Project</a>
-                <a class="navbar-brand" href="{{ route('profile') }}">Profile</a>
-                <a class="navbar-brand" href="{{ route('contact') }}">Contact</a>
+
+                {{--  <a class="navbar-brand" href="#">Logout</a>  --}}
+
+                @auth
+                    <a class="navbar-brand" href="#">Create Profile</a>
+                    <a class="navbar-brand" href="{{ route('add') }}">ADD</a>  
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="navbar-brand">Logout</button>
+                    </form>  
+                    {{--  <a class="navbar-brand" href="{{ route('logout') }}">Logout</a>    --}}
+                @endauth
+                
+                @guest
+                    <a class="navbar-brand" href="/">Home</a>
+                    <a class="navbar-brand" href="{{ route('project') }}">Project</a>
+                    <a class="navbar-brand" href="{{ route('profile') }}">Profile</a>
+                    <a class="navbar-brand" href="{{ route('contact') }}">Contact</a>
+                    <a class="navbar-brand" href="{{ route('register') }}">Register</a> 
+                    <a class="navbar-brand" href="{{ route('login') }}">Login</a> 
+                @endguest
             </div>
         </center>
 

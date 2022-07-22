@@ -17,7 +17,7 @@
                 </div>
                 <div class="d-flex align-items-end justify-content-between border-top">
                     <a href="" class="btn w-50 border-end">Download CV</a>
-                    <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
+                    <a href="{{ route('contact') }}" class="btn w-50 btn-scroll">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     Flexible and team player focused on boosting productivity and performance with conscientious and detail-oriented approaches.
                 </p>
                 <br>
-                <div class="row mb-4">
+                {{--  <div class="row mb-4">
                     <div class="col-sm-6 py-1">
                         <span class="fw-medium text-primary">Name:</span> {{$profile->firstName}}
                     </div>
@@ -56,7 +56,7 @@
                     <div class="col-sm-6 py-1">
                         <span class="fw-medium text-primary">Address:</span> 123 Street, New York, USA
                     </div>
-                </div>
+                </div>  --}}
             </section>
             <!-- About End -->
 

@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-
 @section('content')
 
-    EDIT PROFILE
+    <h1>DASHBOARD</h1>
     
 @endsection

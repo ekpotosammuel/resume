@@ -5,6 +5,10 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,14 +24,46 @@ use App\Http\Controllers\ContactController;
 // Route::get('/contact', function () {
 //     return view('contact.contact');
 // });
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+/*
+|--------------------------------------------------------------------------
+| REGISTER
+|--------------------------------------------------------------------------
+*/
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::post('/register', [RegisterController::class, 'store']);
+/*
+|--------------------------------------------------------------------------
+| LOGIN
+|--------------------------------------------------------------------------
+*/
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'store']);
+Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
 // Route::get('/', 'HomeController@index'); 
 
-Route::get('project', [ExperienceController::class, 'index'])->name('project');
-// Route::get('profile', [ProfileController::class, 'index'])->name('profile');
+/*
+|--------------------------------------------------------------------------
+| PROJECT
+|--------------------------------------------------------------------------
+*/
+// Route::post('/add', [ExperienceController::class, 'store']);
 
+Route::group(['prefix' => 'project'], function() {
+    Route::get('/', [ExperienceController::class, 'index'])->name('project');
+    Route::get('/', [ExperienceController::class, 'showForm'])->name('add');
+    Route::get('/', [ExperienceController::class, 'store']);
 
+});
+
+/*
+|--------------------------------------------------------------------------
+| PROFILE
+|--------------------------------------------------------------------------
+*/
 Route::group(['prefix' => 'profile'], function() {
     Route::get('/', [ProfileController::class, 'index'])->name('profile');
     Route::put('/{profile}', [ProfileController::class, 'update'])->name('edit');

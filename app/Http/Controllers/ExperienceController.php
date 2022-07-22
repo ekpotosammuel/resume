@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreExperienceRequest;
 use App\Http\Requests\UpdateExperienceRequest;
 use App\Models\Experience;
+use Illuminate\Http\Request;
+
 
 class ExperienceController extends Controller
 {
@@ -24,9 +26,9 @@ class ExperienceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function showForm(Request $request)
     {
-        //
+        return view('project.add');
     }
 
     /**
@@ -37,7 +39,7 @@ class ExperienceController extends Controller
      */
     public function store(StoreExperienceRequest $request)
     {
-        //
+        dd('abc');
     }
 
     /**
@@ -48,7 +50,10 @@ class ExperienceController extends Controller
      */
     public function show(Experience $experience)
     {
-        //
+        return response()->json([
+            "status"=>"Success",
+            "data"=>$experience
+        ]);
     }
 
     /**
