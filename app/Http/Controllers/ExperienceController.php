@@ -39,7 +39,33 @@ class ExperienceController extends Controller
      */
     public function store(StoreExperienceRequest $request)
     {
-        dd('abc');
+
+        $request['user_id'] = auth()->user()->id;
+        // dd($request['user_id'] = auth()->user()->id);
+        // dd($request->companyName);
+
+
+        $this->validate($request, [
+            'title'=>'required',
+            'companyName'=>'required',
+            'year'=>'required',
+            'projectName'=>'required',
+            'url'=>'required'
+
+        ]);
+
+
+        // dd('title');
+        $exp                    = new Experience();
+        $exp->title             = $request->input('title');
+        $exp->companyName       = $request->input('companyName');
+        $exp->year              = $request->input('year');
+        $exp->projectName       = $request->input('projectName');
+        $exp->url               = $request->input('url');
+        $exp->save();
+
+        return redirect()->route('dashboard');
+
     }
 
     /**

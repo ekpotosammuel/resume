@@ -37,13 +37,10 @@
                 {{--  <a class="navbar-brand" href="#">Logout</a>  --}}
 
                 @auth
-                    <a class="navbar-brand" href="#">Create Profile</a>
-                    <a class="navbar-brand" href="{{ route('add') }}">ADD</a>  
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf
                         <button type="submit" class="navbar-brand">Logout</button>
                     </form>  
-                    {{--  <a class="navbar-brand" href="{{ route('logout') }}">Logout</a>    --}}
                 @endauth
                 
                 @guest
@@ -57,15 +54,6 @@
             </div>
         </center>
 
-        {{--  <section class="d-flex justify-content-center mb-4">
-            <div class="bg-secondary text-light text-center p-2">
-                <div class="d-flex justify-content-center mb-8">
-                    <h1><a href="/" class="tab-control-item active p-3">HOME</a></h1> 
-                    <h1><a href="{{ route('project') }}" class="tab-control-item p-3">PROJECT</a></h1>
-                    <h1><a href="{{ route('profile') }}" class="tab-control-item p-3">PROFILE</a></h1>
-                    <h1><a href="" class="tab-control-item p-3">CONTACT</a></h1>
-                </div>
-        </section>  --}}
         @yield('content')
         
         <!-- Footer Start -->

@@ -50,14 +50,24 @@ Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 | PROJECT
 |--------------------------------------------------------------------------
 */
-// Route::post('/add', [ExperienceController::class, 'store']);
+// Route::post('/add', [ExperienceController::class, 'store']);    Route::get('/', [ExperienceController::class, 'index'])->name('project');
+    
 
-Route::group(['prefix' => 'project'], function() {
-    Route::get('/', [ExperienceController::class, 'index'])->name('project');
-    Route::get('/', [ExperienceController::class, 'showForm'])->name('add');
-    Route::get('/', [ExperienceController::class, 'store']);
+Route::get('/project', [ExperienceController::class, 'index'])->name('project');
+Route::get('/showForm', [ExperienceController::class, 'showForm'])->name('show');
+Route::post('/store', [ExperienceController::class, 'store'])->name('add');
 
-});
+// Route::group(['prefix' => 'project'], function() {
+//     Route::get('/', [ExperienceController::class, 'index'])->name('project');
+//     Route::get('/add', [ExperienceController::class, 'showForm']);
+//     Route::post('/add', [ExperienceController::class, 'store'])->name('add');
+
+
+
+// });
+
+
+
 
 /*
 |--------------------------------------------------------------------------

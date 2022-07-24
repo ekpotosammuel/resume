@@ -2,33 +2,40 @@
 
 
 @section('content')
-    <form action="{{ route('project') }}" method="POST">
+<center>
+    <div>
+        ADD
+    </div>
+</center>
+    <form action="{{ route('add') }}" method="POST">
         @csrf
-    <form>
-        <div class="form-group">
-          <label for="title">TITLE</label>
-          <input type="text" class="form-control" id="title" placeholder="Title">
+        <div>
+
+            <div class="mb-3 mt-3">
+                <label for="title" class="form-label">Title:</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="companyName">COMPANY NAME</label>
+                <input type="text" class="form-control" id="companyName" placeholder="Company Name" name="companyName">
+            </div>
+            <div class="form-group">
+                <label for="year">DURATION</label>
+                <input type="text" class="form-control" id="year" placeholder="Company Name" name="year">
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">PROJECT NAME</label>
+                <input type="text" class="form-control" id="projectName" placeholder="Project Name" name="projectName">
+            </div>
+            <div class="form-group">
+                <label for="url">PROJECT URL</label>
+                <input type="text" class="form-control" id="url" placeholder="Project URL" name="url">
+            </div>
+            <br>
+            <center>
+                <button type="submit" class="btn btn-primary">SEND</button>
+            </center>
         </div>
-        <div class="form-group">
-            <label for="companyName">COMPANY NAME</label>
-            <input type="text" class="form-control" id="companyName" placeholder="Company Name">
-        </div>
-        <div class="form-group">
-            <label for="year">YEAR</label>
-            <input type="text" class="form-control" id="year" placeholder="Work Duration">
-        </div>
-        <div class="form-group">
-            <label for="projectName">PROJECT NAME</label>
-            <input type="text" class="form-control" id="projectName" placeholder="Project Name">
-        </div>
-        <div class="form-group">
-            <label for="url">PROJECT URL</label>
-            <input type="text" class="form-control" id="url" placeholder="Project URL">
-        </div>
-        <br>
-        <center>
-            <button type="submit" class="btn btn-primary">ADD</button>
-        </center>
-      </form>
-    
+    </form>
 @endsection
