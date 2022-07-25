@@ -5,7 +5,7 @@
     <center>
         <h1>EDIT</h1>
     </center>
-    {{--  <form action="{{ route('edit/'.$exp->experience) }}" method="POST">
+    <form action="{{ route('update') }}" method="POST">
         @csrf
         <div>
             <div class="form-group">
@@ -33,5 +33,5 @@
                 <button type="submit" class="btn btn-primary">UPDATE</button>
             </center>
         </div>
-    </form>  --}}
+    </form>
 @endsection

@@ -14,6 +14,11 @@
                     <div class="col-sm-6 py-1">
                         <span class="fw-medium text-primary">Live Server: </span>{{ $exp->url }}
                     </div>
+                    <button type="submit">
+                        <a href="{{ route('edit', $exp) }}">EDIT</a>
+                        {{--  <a href="{{ url('/project/{id}') }}/{{ $exp->id }}">EDIT</a>  --}}
+                    </button>
+                    
                 </div>
             </div>
         @endforeach

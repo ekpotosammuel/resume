@@ -50,12 +50,13 @@ Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 | PROJECT
 |--------------------------------------------------------------------------
 */
-// Route::post('/add', [ExperienceController::class, 'store']);    Route::get('/', [ExperienceController::class, 'index'])->name('project');
-    
 
 Route::get('/project', [ExperienceController::class, 'index'])->name('project');
 Route::get('/showForm', [ExperienceController::class, 'showForm'])->name('show');
 Route::post('/store', [ExperienceController::class, 'store'])->name('add');
+Route::get('/project/{experience}', [ExperienceController::class, 'view'])->name('edit');
+Route::post('/update', [ExperienceController::class, 'update'])->name('update');
+
 
 // Route::group(['prefix' => 'project'], function() {
 //     Route::get('/', [ExperienceController::class, 'index'])->name('project');
@@ -76,7 +77,7 @@ Route::post('/store', [ExperienceController::class, 'store'])->name('add');
 */
 Route::group(['prefix' => 'profile'], function() {
     Route::get('/', [ProfileController::class, 'index'])->name('profile');
-    Route::put('/{profile}', [ProfileController::class, 'update'])->name('edit');
+    // Route::put('/{profile}', [ProfileController::class, 'update'])->name('edit');
 
 });
 

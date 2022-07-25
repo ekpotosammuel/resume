@@ -88,9 +88,19 @@ class ExperienceController extends Controller
      * @param  \App\Models\Experience  $experience
      * @return \Illuminate\Http\Response
      */
-    public function edit(Experience $experience)
+    public function view(Experience $experience)
     {
-        //
+        // $fumigations = Fumigation::where('id', $request->id)->first();
+        // return view('fumigations.show', compact('fumigations'));
+        // dd($experience);
+        $exp_id = $experience->id;
+        $exp = Experience::find($exp_id);
+
+        // dd($exp);
+
+        // $experience = Experience::findOrFail($experience);
+        return view('project.edit', compact('exp'));
+        // return view('project.edit');
     }
 
     /**
@@ -102,7 +112,18 @@ class ExperienceController extends Controller
      */
     public function update(UpdateExperienceRequest $request, Experience $experience)
     {
-        //
+;
+
+        $exp = Experience::find($experience);
+        $exp->title             = $request->title;
+        $exp->companyName       = $request->companyName;
+        $exp->year              = $request->year;
+        $exp->projectName       = $request->projectName;
+        $exp->url               = $request->url;
+        $exp->update();
+        dd($exp->projectName);
+
+        return view('project.edit', compact('exp'));
     }
 
     /**

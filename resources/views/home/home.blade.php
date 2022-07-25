@@ -7,8 +7,9 @@
         <div class="col-lg-4 sticky-lg-top vh-100">
             <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
                 <img class="w-100 img-fluid mb-4" height="150" src="img/profile.jpg" alt="Image" >
-                <h1 class="text-primary mt-2">{{$profile->firstName}} {{$profile->lastName}}</h1> <br>
+                <h1 class="text-primary mt-2">{{$profile->firstName}} {{$profile->lastName}}</h1>
                 <h4>Full Stack Developer</h4>
+                <h4>ML Engineer</h4>
                 <div class="d-flex justify-content-center mt-auto mb-3">
                     <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/ekpotosammuel"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-secondary btn-square mx-1" href="https://web.facebook.com/ekpotosammuel"><i class="fab fa-facebook-f"></i></a>
@@ -16,7 +17,7 @@
                     <a class="btn btn-secondary btn-square mx-1" href="https://www.instagram.com/ekpotosammuel"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="d-flex align-items-end justify-content-between border-top">
-                    <a href="" class="btn w-50 border-end">Download CV</a>
+                    <a href="#" class="btn w-50 border-end">Download CV</a>
                     <a href="{{ route('contact') }}" class="btn w-50 btn-scroll">Contact Me</a>
                 </div>
             </div>
@@ -90,6 +91,15 @@
                             </div>
                             <div class="progress">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-2">ML</p>
+                                <p class="mb-2">65%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
