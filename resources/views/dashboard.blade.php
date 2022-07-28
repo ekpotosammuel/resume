@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <center>
-        <h1>DASHBOARD</h1>
-    </center>
-    <div>
-        <a class="navbar-brand" href="#">Create Profile</a>
-    </div>
-    <div>
-        <a class="navbar-brand" href="{{ route('show') }}">ADD EXPERIENCE</a> 
-    </div>
+
+    @auth
+        <div>
+            <a class="navbar-brand" href="#">ADD PROFILE</a>
+        </div>
+        <div>
+            <a class="navbar-brand" href="{{ route('show') }}">ADD PROJECT</a> 
+        </div>
+    @endauth
 
 
 @endsection

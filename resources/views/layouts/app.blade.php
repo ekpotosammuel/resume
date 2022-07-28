@@ -41,6 +41,10 @@
                         @csrf
                         <button type="submit" class="navbar-brand">Logout</button>
                     </form>  
+                    <a class="navbar-brand" href="/">Home</a>
+                    <a class="navbar-brand" href="{{ route('project') }}">Project</a>
+                    <a class="navbar-brand" href="{{ route('profile') }}">Profile</a>
+                    <a class="navbar-brand" href="{{ route('dashboard') }}">Dashboard</a>
                 @endauth
                 
                 @guest
@@ -62,7 +66,7 @@
                 <div class="d-flex justify-content-center mb-4">
                     <a class="btn btn-dark btn-square mx-1" href="https://twitter.com/ekpotosammuel"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-square mx-1" href="https://web.facebook.com/ekpotosammuel"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/ekpoto-sammuel-3230861aa/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/ekpoto-samuel-3230861aa/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-dark btn-square mx-1" href="https://www.instagram.com/ekpotosammuel"><i class="fab fa-instagram"></i></a>
                 </div>
                 {{--  <div class="d-flex justify-content-center mb-3">
@@ -73,7 +77,7 @@
                 </div>  --}}
                 
                 <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                <p class="m-0">&copy; All Rights Reserved. Designed by <a href="https://htmlcodex.com">CodeDreamer</a></p>
+                <p class="m-0">&copy; All Rights Reserved. Designed by <a href="https://www.linkedin.com/in/ekpoto-samuel-3230861aa/">CodeDreamer</a></p>
             </div>
         </section>
         <!-- Footer End -->
