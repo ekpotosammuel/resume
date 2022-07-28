@@ -52,8 +52,8 @@
                     <a class="navbar-brand" href="{{ route('project') }}">Project</a>
                     <a class="navbar-brand" href="{{ route('profile') }}">Profile</a>
                     <a class="navbar-brand" href="{{ route('contact') }}">Contact</a>
-                    <a class="navbar-brand" href="{{ route('register') }}">Register</a> 
-                    <a class="navbar-brand" href="{{ route('login') }}">Login</a> 
+                    {{--  <a class="navbar-brand" href="{{ route('register') }}">Register</a> 
+                    <a class="navbar-brand" href="{{ route('login') }}">Login</a>   --}}
                 @endguest
             </div>
         </center>

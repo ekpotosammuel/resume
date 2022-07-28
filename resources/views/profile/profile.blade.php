@@ -54,13 +54,13 @@
                 <span class="fw-medium text-primary">Experience:</span> {{$profile->experience}}
             </div>
             <div class="col-sm-6 py-1">
-                <span class="fw-medium text-primary">Phone:</span> +012 345 6789
+                <span class="fw-medium text-primary">Phone:</span> +2349024592013
             </div>
             <div class="col-sm-6 py-1">
                 <span class="fw-medium text-primary">Email:</span> {{$profile->email}}
             </div>
             <div class="col-sm-6 py-1">
-                <span class="fw-medium text-primary">Address:</span> 123 Street, New York, USA
+                <span class="fw-medium text-primary">State:</span> Calabar
             </div>
             <div class="col-sm-6 py-1">
                 <span class="fw-medium text-primary">Country:</span> {{$profile->country}}

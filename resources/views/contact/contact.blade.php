@@ -6,7 +6,7 @@
         <h1>CONTACT FORM</h1>
 
     </center>
-    <form>
+    <form method="POST" action="contact\contactme.php">
         <div class="row g-3">
             <div class="col-md-6">
                 <div class="form-floating">

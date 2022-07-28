@@ -13,7 +13,7 @@
                 <div class="d-flex justify-content-center mt-auto mb-3">
                     <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/ekpotosammuel"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-secondary btn-square mx-1" href="https://web.facebook.com/ekpotosammuel"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/ekpoto-sammuel-3230861aa/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/ekpoto-samuel-3230861aa/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-secondary btn-square mx-1" href="https://www.instagram.com/ekpotosammuel"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="d-flex align-items-end justify-content-between border-top">

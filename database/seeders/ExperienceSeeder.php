@@ -17,15 +17,15 @@ class ExperienceSeeder extends Seeder
     {
         $exp = [
             [
-                'title'=> 'Full Stack dev (Junior Dev)',
-                'companyName'=> 'Connect Marketting',
+                'title'=> 'Junior Software Engineer',
+                'companyName'=> 'Connect Marketing Services',
                 'year'=> '2022',
                 'projectName'=> 'GetSella',
                 'url'=> 'www.getsella.com',
             ],
             [
-                'title'=> 'Backend Dev',
-                'companyName'=> 'Zuri Intership',
+                'title'=> 'Internship',
+                'companyName'=> 'Ingressive For Good',
                 'year'=> '2021',
                 'projectName'=> 'Votrr',
                 'url'=> 'votrrng.herokuapp.com',
