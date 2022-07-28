@@ -2,14 +2,20 @@
 
 @section('content')
 
-    @auth
+    {{--  @auth
         <div>
             <a class="navbar-brand" href="#">ADD PROFILE</a>
         </div>
         <div>
             <a class="navbar-brand" href="{{ route('show') }}">ADD PROJECT</a> 
         </div>
-    @endauth
+    @endauth  --}}
+    <div>
+        <a class="navbar-brand" href="#">ADD PROFILE</a>
+    </div>
+    <div>
+        <a class="navbar-brand" href="{{ route('show') }}">ADD PROJECT</a> 
+    </div>
 
 
 @endsection
