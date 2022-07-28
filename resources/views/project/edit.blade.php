@@ -5,7 +5,7 @@
     <center>
         <h1>EDIT</h1>
     </center>
-    <form action="{{ route('update') }}" method="POST">
+    <form action="{{ route('update', $exp) }}" method="POST">
         @csrf
         <div>
             <div class="form-group">

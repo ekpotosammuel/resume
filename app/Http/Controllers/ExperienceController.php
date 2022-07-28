@@ -120,9 +120,7 @@ class ExperienceController extends Controller
         $exp->year              = $request->year;
         $exp->projectName       = $request->projectName;
         $exp->url               = $request->url;
-        $exp->update();
-        dd($exp->projectName);
-
+        // $exp->update();
         return view('project.edit', compact('exp'));
     }
 

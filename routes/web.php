@@ -55,7 +55,7 @@ Route::get('/project', [ExperienceController::class, 'index'])->name('project');
 Route::get('/showForm', [ExperienceController::class, 'showForm'])->name('show');
 Route::post('/store', [ExperienceController::class, 'store'])->name('add');
 Route::get('/project/{experience}', [ExperienceController::class, 'view'])->name('edit');
-Route::post('/update', [ExperienceController::class, 'update'])->name('update');
+Route::post('/project{experience}', [ExperienceController::class, 'update'])->name('update');
 
 
 // Route::group(['prefix' => 'project'], function() {
