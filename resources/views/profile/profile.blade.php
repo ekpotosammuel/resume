@@ -56,11 +56,11 @@
             <div class="col-sm-6 py-1">
                 <span class="fw-medium text-primary">Phone:</span> +2349024592013
             </div>
-            <div class="col-sm-6 py-1">
+            {{--  <div class="col-sm-6 py-1">
                 <span class="fw-medium text-primary">Email:</span> {{$profile->email}}
-            </div>
+            </div>  --}}
             <div class="col-sm-6 py-1">
-                <span class="fw-medium text-primary">State:</span> Calabar
+                <span class="fw-medium text-primary">State:</span> Cross-River
             </div>
             <div class="col-sm-6 py-1">
                 <span class="fw-medium text-primary">Country:</span> {{$profile->country}}

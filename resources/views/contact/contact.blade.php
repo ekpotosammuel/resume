@@ -10,27 +10,27 @@
         <div class="row g-3">
             <div class="col-md-6">
                 <div class="form-floating">
-                    <input type="text" class="form-control border-0 bg-secondary" name="name" id="name" placeholder="Your Name">
+                    <input type="text" class="form-control border-0 bg-secondary" name="name" id="name" placeholder="Your Name" required>
                     <label for="name">Your Name</label>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-floating">
                     <input type="email" class="form-control border-0 bg-secondary" name="email" id="email"
-                        placeholder="Your Email">
+                        placeholder="Your Email" required>
                     <label for="email">Your Email</label>
                 </div>
             </div>
             <div class="col-12">
                 <div class="form-floating">
-                    <input type="text" class="form-control border-0 bg-secondary" name="subject" id="subject" placeholder="Subject">
+                    <input type="text" class="form-control border-0 bg-secondary" name="subject" id="subject" placeholder="Subject" required>
                     <label for="subject">Subject</label>
                 </div>
             </div>
             <div class="col-12">
                 <div class="form-floating">
                     <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" name="comments, questions" id="message"
-                        style="height: 200px"></textarea>
+                        style="height: 200px" required></textarea>
                     <label for="message">Message</label>
                 </div>
             </div>
