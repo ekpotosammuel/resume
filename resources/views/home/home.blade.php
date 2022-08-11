@@ -27,7 +27,7 @@
             <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
                 <h1 class="title pb-3 mb-5">About Me</h1>
                 <p>
-                    Full Stack Developer with 2+ years of experience with python Django and PHP laravel as the server-side language. 
+                    Software Developer with 2+ years of experience with python Django and PHP laravel as the server-side language. 
                     Experience in GitHub, PostgreSQL, MySQL, HTML, CSS, Bootstrap and ability to work in an Agile and Scrum environment. 
                     Flexible and team player focused on boosting productivity and performance with conscientious and detail-oriented approaches.
                 </p>
